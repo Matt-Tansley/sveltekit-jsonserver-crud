@@ -1,0 +1,3 @@
+// Using this file to override Pico's default $semantic-root-element
+@use "../../node_modules/@picocss/pico/scss/index" with ($semantic-root-element: "div#pico-root"
+)
