@@ -4,6 +4,10 @@
 
 - https://docs.robbrazier.com/svelte-awesome/
 
+## json-server
+
+Using json-server for mock API and mock DB: https://github.com/typicode/json-server
+
 ## Pico CSS
 
 ### The Basics

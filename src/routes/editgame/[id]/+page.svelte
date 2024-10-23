@@ -1,18 +1,31 @@
 <script>
-	// import { goto } from '$app/navigation';
+	import { goto } from '$app/navigation';
 
 	export let data;
+
+	const apiHost = 'http://localhost:3001';
 
 	let game = data.game;
 	let players = data.players;
 
-	// const findPlayerName = (id: string) => {
-	// 	return players.find((player: any) => player.id === id)?.name;
-	// };
+	async function editGame() {
+		const res = await fetch(`${apiHost}/games/${game.id}`, {
+			method: 'PUT',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(game)
+		}).then((res) => {
+			res.json();
+			goto('/');
+		});
+	}
 </script>
 
 <main class="container">
 	<h1>Edit Game</h1>
+
+	<button on:click={() => goto('/')}>Cancel</button>
 
 	<div>
 		<label for="date">Date</label>
@@ -27,9 +40,12 @@
 	<div>
 		<label for="winner">Winner</label>
 		<select id="winner" bind:value={game.winnerID}>
-			{#each data.players as player}
+			{#each players as player}
 				<option value={player.id}>{player.name}</option>
 			{/each}
 		</select>
 	</div>
+	<footer>
+		<button type="submit" on:click={editGame}>Edit</button>
+	</footer>
 </main>
