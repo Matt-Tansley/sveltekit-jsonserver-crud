@@ -1,5 +1,9 @@
 ## sveltekit-jsonserver-crud
 
+## Icons
+
+- https://docs.robbrazier.com/svelte-awesome/
+
 ## Pico CSS
 
 ### The Basics

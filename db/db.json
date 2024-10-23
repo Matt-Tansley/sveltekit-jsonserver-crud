@@ -1,0 +1,26 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "name": "Matt"
+    },
+    {
+      "id": "2",
+      "name": "Wayne"
+    }
+  ],
+  "games": [
+    {
+      "id": "1",
+      "board": "Tharsis",
+      "date": "2024-01-01",
+      "winnerID": "1"
+    },
+    {
+      "id": "aaa4",
+      "date": "2024-10-23",
+      "board": "Tharsis",
+      "winnerID": "2"
+    }
+  ]
+}

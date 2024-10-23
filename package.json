@@ -34,6 +34,8 @@
 	},
 	"dependencies": {
 		"@picocss/pico": "^2.0.6",
-		"sass": "^1.80.3"
+		"json-server": "^1.0.0-beta.3",
+		"sass": "^1.80.3",
+		"svelte-awesome": "^3.3.5"
 	}
 }
